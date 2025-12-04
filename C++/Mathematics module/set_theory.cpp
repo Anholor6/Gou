@@ -2,7 +2,7 @@
 
 class  set_theory{
     public:
-        double* return_union (double *set1,double *set2)
+        double[] return_union (double *set1,double *set2)
         {
             double union_set [sizeof(set1) + sizeof(set2)];
             
@@ -17,7 +17,7 @@ class  set_theory{
             return union_set;
         }
 
-        double* return_intersection (double *set1, double *set2)
+        double[] return_intersection (double *set1, double *set2)
         {
             double intersection_set[(sizeof(set1) + sizeof(set2))/2];
             int intersection_index = 0;

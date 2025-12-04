@@ -1,12 +1,9 @@
 class elementaries{
     public:
-        double sine = 0, cos = 0, tan = 0, logarithm = 0, at_precision = 0, e = 0, exponent = 0;
-        float pi = 22/7;
-
         double calculate_logarithm(double base, double number, double precision)
         {
-            logarithm = 0;
-            at_precision = 0;
+            double logarithm = 0;
+            double at_precision = 0;
 
             while (at_precision != precision)
                 logarithm = number/(base * precision);
@@ -18,7 +15,7 @@ class elementaries{
             if (precision < 0)
                 precision = precision * (-1);
 
-            e = e + 1;
+            double e = e + 1;
             for (int i = 1; i < precision; i++)
                 e = e + (1/i);
             return e;

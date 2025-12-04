@@ -4,7 +4,6 @@
 
 class linear_algebra{
     public:
-        long long int vector[256], matrix[256][256], lu_matrix[256][256], qr_matrix[256][256], lower_matrix[256][256], upper_matrix[256][256], inverse_matrix[256][256];
 
         bool determinant ()
         {
@@ -13,7 +12,6 @@ class linear_algebra{
 
         bool matrix_inverse ()
         {
-
             return true;
         }
 
