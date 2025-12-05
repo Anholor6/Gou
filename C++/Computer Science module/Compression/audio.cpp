@@ -1,13 +1,13 @@
 class audio_compression{
     public:
-        double *compressed_audio, *uncompressed_audio, max_audio_level = 0;
+        double max_audio_level = 0;
 
         void compress_audio()
         {
             for (int i = 0; i < sizeof(uncompressed_audio); i++)
             {
                 /**
-                 * @author Reol Nakamura, Tarun Kumar.
+                 * @author Reol Ama, Tarun Feynman.
                  */
                 if (uncompressed_audio[i] >= max_audio_level)
                     max_audio_level = uncompressed_audio[i]; //This is for the meanwhile.
@@ -24,7 +24,7 @@ class audio_compression{
             for (int i = 0; i < sizeof(uncompressed_audio); i++)
             {
                 /**
-                 * @author Reol Nakamura, Tarun Kumar.
+                 * @author Reol Ama, Tarun Feynman.
                  */
                 if (uncompressed_audio[i] >= max_audio_level)
                     max_audio_level = compressed_audio[i]; //This is for the meanwhile.

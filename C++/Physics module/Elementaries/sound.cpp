@@ -2,16 +2,6 @@
 
 //using namespace std;
 
-struct sound_space {
-    __uint128_t view1[256][256];
-    __uint128_t view2[256][256];
-    __uint128_t view3[256][256];
-    __uint128_t view4[256][256];
-    __uint128_t view5[256][256];
-    __uint128_t view6[256][256];
-};
-
-
 class sound{
     public:
 
